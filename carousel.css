@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the main container */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style each item container */
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    /* width: 30%; */
+    /* text-align: center; */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for item containers */
+.container:hover, .next:hover {
+    transform: scale(1.05);
+}
+
+/* Style the images */
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
+/* Style the list items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Style the left and right spans */
+.left {
+    color: grey;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 30px;
+    width: 110px;
+    display: inline-block;
+
+}
+
+.right {
+    font-size: 18px;
+}
+
+.left.big {
+    font-size: 20px;
+    /* margin-right: 20px; */
+
+}
+
+/* Style the bottom section */
+.bottom {
+    margin-top: 20px;
+    margin-left: 105px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+/* 
+span {
+    font-size: 18px;
+} */
+
+.owl-carousel .owl-item img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: -115px;
+}
+
+.owl-carousel.owl-drag .owl-item{
+    margin-top: 115px;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    background-color: gold;
+    color: black;
+    font-size: 70px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: 0px; */
+}
+.owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+.owl-carousel button.owl-dot{
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: #ddd;
+    margin-right: 20px;
+}
+.owl-carousel button.owl-dot.active{
+    background: red;
+    width: 40px;
+    /* text-align: center; */
+}
+.owl-dots{
+    text-align: center;
+}
+  
